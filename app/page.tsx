@@ -1,24 +1,41 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-slate-950 px-6 text-center text-slate-300 font-sans selection:bg-cyan-500/30">
       
+      {/* Top Logo Badge */}
+      <div className="absolute top-8 left-8 flex items-center gap-3">
+        <Image 
+          src="/mac-logo.png" 
+          alt="mAc Logo" 
+          width={32} 
+          height={32} 
+          className="rounded-full bg-white p-0.5 border border-slate-800" 
+        />
+        <span className="text-sm font-semibold tracking-wider text-slate-300 font-mono">
+          
+        </span>
+      </div>
+
       {/* Central Content */}
-      <div className="max-w-3xl flex flex-col items-center">
+      <div className="max-w-3xl flex flex-col items-center mt-12">
         <div className="mb-8 inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-sm font-medium text-cyan-400">
           <span className="flex h-2 w-2 rounded-full bg-cyan-500 mr-3 animate-pulse"></span>
-          Under Construction
+          Brewing Now!
         </div>
         
         <h1 className="text-4xl font-bold sm:text-5xl text-white tracking-tight leading-tight mb-6">
-          A portfolio is being built by <br className="hidden sm:block" />
+          Portfolio is being built by <br className="hidden sm:block" />
           <span className="text-cyan-400">Akash Chandran Mayilvaganan</span>
         </h1>
         
         <p className="text-lg sm:text-xl text-slate-400 leading-relaxed max-w-2xl">
-          A Salesforce Developer who builds agents from the ground up.
+          A Salesforce Developer by Profession. A Software Engineer by Passion.
         </p>
+        <p className="text-lg sm:text-xl text-slate-400 leading-relaxed max-w-2xl"> 
+          Something new is taking shape ! </p>
       </div>
 
       {/* Footer with LinkedIn */}
